@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style>
+		*{
+	box-sizing: border-box;
+}
+
+		body {
+			margin: auto;
+			max-width: 700px	
+		}
+
+		header{
+			background-image: linear-gradient(180deg, #dc01fe, #860199);
+			height: 60px;
+		}
+
+		header img {
+			float: left;
+			width: 80px;
+			height: 60px;
+			padding: 10px;
+		}
+
+		nav{
+			display: inline-block;
+			color: white;
+			font-family: sans-serif;
+			font-weight: lighter;
+			font-size: 25px;
+			padding: 10px 30px;
+			line-height:1.5;
+		}
+
+		nav a {
+			text-decoration: none;
+			color: white;
+			padding-right: 20px;
+		}
+
+		.welcome {
+			background: #b9fff4;
+			padding: 80px 40px;
+			width: 100%;
+			text-align: center;
+		}
+
+		.welcome h1 {
+			font-family: sans-serif;
+			font-size: 120px;
+			font-weight: light;
+		}
+
+		.images{
+			background-image: url('https://thumbs.dreamstime.com/z/surface-gray-aluminum-background-surface-gray-aluminum-background-design-backdrop-your-work-106187659.jpg');
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			padding: 40px 20px;
+			
+		}
+
+		.images img{
+			width: 300px;
+		}
+
+		.colorful-bill {
+			height: 175px;
+			width: 10px;
+			object-fit: cover;
+		}
+
+		.contact {
+			background: #cbcccc;
+			padding: 20px;	
+		}
+
+		.contact h3 {
+			font-family: sans-serif;
+			font-size: 40px;
+			color: #00d4fe;
+		}
+
+		p {
+			margin-top: 20px;
+			font-family: helvetica;
+			font-size: 14px;
+			line-height: 1.5;
+			letter-spacing: .02em;
+			max-width: 90ch;
+		}
+
+		.farewell {
+			background-image: linear-gradient(90deg, #fc2b3f, #ae02bc);
+			padding: 30px;
+			padding-bottom: 60px;
+		}
+
+		.farewell h3 {
+			color: #2dc9f3;
+			font-family: sans-serif;
+			font-size: 40px;
+		}
+	</style>
+</head>
+<body>
+
+</body>
+</html>
+
+<header>
+	<img src="data:image/png;base64,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">
+	<nav class="links">
+		<a href='#'>Home</a>
+		<a href='#'>About</a>
+		<a href='#'>Contact</a>
+	</nav>
+</header>
+
+<main class="welcome">
+	<h1>Welcome!</h1>
+</main>
+
+<section class="images">
+	<img src="https://popschau.files.wordpress.com/2013/06/bill-murray-wallpaper-2-711697.jpg">
+	<img src="https://www.artranked.com/images/7d/7d1998b0fe5e6a50adeaa31a8016c3e0.jpg" class="colorful-bill">
+</section>
+
+<section class="contact">
+	<h3>Contact us today!</h3>
+	<p>Some example paragraph text here that is long enough that it wraps a few times. Some example paragraph text here that is long enough that it wraps a few times. </p>
+</section>
+
+<footer class="farewell">
+	<h3>Bye bye!</h3>
+	<p>Some example paragraph text here that is long enough that it wraps a few times. Some example paragraph text here that is long enough that it wraps a few times. Some example paragraph text here that is long enough that it wraps a few times. </p>
+</footer>

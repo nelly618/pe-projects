@@ -1,0 +1,80 @@
+@import 'meyer-reset.css';
+@import 'setup.css';
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #D0CC9E;
+	font-family: helvetica;
+	width: 98%;
+	max-width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+h1 {
+	font-family: cyrene, sans-serif;
+	font-size: 5vw;
+	line-height: 1.5;
+	letter-spacing: .05em;
+}
+
+p, li, ul, ol {
+	font-family: sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: .04em;
+	color: #3E1515;
+}
+
+img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+h2 {
+	text-algn: left;
+	font-size: 40px;
+	font-family: 'beround light', helvetica;
+	padding: 10px;
+}
+
+h2 + p {
+	font-family: helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	text-align: center;
+}
+
+ul {
+	padding-bottom: 10px;
+}
+
+p + h3, ol + h3 {
+	text-align: left;
+	padding-top: 10px;
+}
+
+li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+	color: #109347;
+	border-bottom: 2px solid gray;
+}
+
+a:hover {
+	color: white;
+	border: none;
+	font-size: 18px;
+	transition: all .5s ease-in-out;
+}

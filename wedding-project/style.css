@@ -1,0 +1,141 @@
+* {
+	box-sizing: content-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&family=Libre+Baskerville&display=swap');
+/* font-family: 'Libre Baskerville', serif; */
+/* font-family: 'Josefin slab', serif; */
+@import url('https://www.peprojects.dev/alpha-5/chanelle/fonts/Migra-extralight.otf');
+
+body {
+	background:#eae9e5;
+	font-family: 'Libre Baskerville', serif;
+	margin: 0;
+}
+
+.inner-column {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 98%;
+	max-width: 950px;
+}
+
+header {
+	background: #f4ddd5;
+	opacity: .8;
+	width: 100%;
+	margin-bottom: 30px;
+	padding: 10px;
+	text-align: center;
+	font-family: 'Josefin slab', serif;
+	font-size: 20px;
+}
+
+.logo img {
+	width: 200px;
+}
+
+.logo a:hover {
+	opacity: .4;
+	border: none;
+}
+
+a{
+	text-decoration: none;
+	color:#222d44;
+}
+
+a:hover {
+	border-bottom: 5px double #c48f7f;
+	transition: all .2s ease-in-out;
+}
+
+/*
+.menu-links {
+	float: left;
+	margin-left: 15px;
+	padding: 10px;
+}
+*/
+
+.opening-photo {
+	margin-bottom: 40px;
+}
+
+.opening-photo img{
+	border: 5px solid silver;
+	border-radius: 1300px;
+}
+
+.photo-1, .photo-2, .photo-3 {
+	max-width: 300px;
+	height: auto;
+}
+
+.intro, .reviews {
+	max-width: 600px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.quote {
+	text-align: center;
+	}
+
+p {
+	font-family: 'Josefin slab', serif;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: .05em;
+	max-width: 70ch;
+	margin-bottom: 35px;
+}
+
+.reviews p {
+	background: white;
+	max-width: 60ch;
+	width: auto;
+	padding: 15px;
+	border-radius: 15px;
+	margin: 30px;
+	margin-bottom: 50px;
+}
+
+h3, .features {
+	display: block;
+	font-family: 'Migra-extralight', 'Libre Baskerville', serif;
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 1.4;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.features img {
+	width: 50;
+	margin-right: 15px;
+	height: auto;
+}
+
+.features a:hover {
+	opacity: .4;
+	border: none;
+}
+
+footer {
+	background: #989898;
+	width: 98%;
+	text-align: center;
+	display: block;
+	padding: 30px;
+}
+
+footer a {
+	margin: 0 30px;
+}
+
+.social-media img {
+	width: 50;
+}
