@@ -1,0 +1,125 @@
+			* {
+				box-sizing: border-box; 
+			}
+
+			body {
+				background-color: grey;
+				color: white;
+				margin: 0;
+				text-align:center;
+			}
+
+			header {
+				color: black;
+				background: lightpink;
+				font-size: 28px;
+				width: 100%;
+				margin-top: 0;
+				padding: 10px;
+			}
+
+			header a {
+				font-size: 18px;}
+
+			h1 {
+				font-family: Helvetica, Courier Sans;
+				font-size: 75 px;
+				line-height: 1.5;
+				color: white;
+				text-align: center;
+				padding: 10px;
+			}
+
+			a {
+				text-decoration: none;
+				color: black;
+			}
+
+			a:hover {
+				color: lightgrey;
+			}
+
+			p {
+				text-align: left;
+				line-height: 1.3;
+				line-length: 65em;
+				width: 60%;
+				margin-right: auto;
+				margin-left: auto;
+				margin-bottom: 20px;
+			}
+
+			.contact {
+				text-align:right;
+			}
+
+			hr {
+				width: 70%;
+			}
+
+			.svg-image {
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+				max-width: 500px;
+			}
+
+			svg {
+				width: 100%;
+				height: auto;
+			}
+
+			#RUQ {
+				fill: rgb(149,89,89);
+				stroke:black;
+				stroke-width:3.5px;
+				transition: 1s;
+			}
+
+			#RUQ:hover {
+				fill: green;
+			}
+
+			#LUQ {
+				fill: rgb(149,89,89);
+				stroke:black;
+				stroke-width:3.5px;
+				transition: 1s;
+			}
+
+			#LUQ:hover {
+				fill: #B32D2D;
+			}
+
+			#RLQ {
+				fill: rgb(149,89,89);
+				stroke:black;
+				stroke-width:3.5px;
+				transition: 1s;
+			}
+
+			#RLQ:hover {
+				fill: lightpink;
+			}
+
+			#LLQ {
+				fill: rgb(149,89,89);
+				stroke:black;
+				stroke-width:3.5px;
+				transition: 1s;
+			}
+
+			#LLQ:hover {
+				fill: ivory;
+			}
+
+			#PU {
+				fill: rgb(149,89,89);
+				stroke:black;
+				stroke-width:3.5px;
+				transition: 1s;
+			}
+
+			#PU:hover {
+				fill: teal;
+			}
