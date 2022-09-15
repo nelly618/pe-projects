@@ -1,0 +1,151 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+}
+
+.inner-column {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 98%;
+	max-width: 700px;
+}
+
+/*STRUCTURE*/
+header {
+	position: sticky;
+	top: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 65%;
+}
+
+.header-image {
+	display: block;
+	max-width: 100px;
+	height: auto;
+}
+
+picture, .photo-1, .photo-2, .photo-3 {
+	display: block;
+	max-width: 200px;
+	border-radius: 50%;
+}
+
+.photo-1 {
+	position: relative;
+	left: 5px;
+}
+
+.photo-3 {
+	position: relative;
+	left: 20%;
+	bottom: 50px;
+}
+
+img {
+	display: block;
+	width: 100%;
+	border-radius: 50%;
+}
+
+.opening-images div {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+
+/*COLORS*/
+body {
+	background: #c48f7f;
+}
+
+/*TYPOGRAPHY*/
+a {
+	text-decoration: none;
+	color: black;
+	transition: .1s all ease-in-out;
+	margin-right: 15px;
+}
+
+a:hover {
+	color: lightpink;
+}
+
+.quote {
+	text-align: center;
+	margin-top: 20px;
+}
+
+p {
+	font-family: georgia;
+	font-size: 16px;
+	letter-spacing: .03em;
+	line-height: 1.4;
+	max-width: 70ch;
+}
+
+/*BREAKPOINT 1*/
+@media (min-width: 600px) {
+header {
+	gap: 23%;
+	justify-content: flex-end;
+}
+
+picture, .photo-1, .photo-2, .photo-3 {
+	max-width: 300px;
+}
+
+.photo-1 {
+	left: 5px;
+}
+
+.photo-3 {
+	left: -10px;
+	bottom: 0;
+}
+
+.opening-images div {
+	flex-wrap: nowrap;
+}
+}
+
+/*BREAKPOINT 2*/
+@media (min-width: 900px) {
+	.header-image {
+		justify-content: flex-end;
+	}	
+
+	header a {
+		display: none;
+	}
+
+	/*BOOK CONSULTATION IN CORNER*/
+
+	.photo-1, .photo-3 {
+	left: 0;
+}
+
+.opening-images div {
+	gap: 10px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
