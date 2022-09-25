@@ -2,6 +2,11 @@
 	box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&family=Libre+Baskerville&display=swap');
+/* font-family: 'Libre Baskerville', serif; */
+/* font-family: 'Josefin slab', serif; */
+@import url('https://www.peprojects.dev/alpha-5/chanelle/fonts/Migra-extralight.otf');
+
 body {
 	margin: 0;
 	min-height: 100vh;
@@ -17,18 +22,31 @@ body {
 
 /*STRUCTURE*/
 header {
+	width: 100%;
 	position: sticky;
 	top: 0;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	gap: 65%;
+	justify-content: space-between;
+}
+
+.svg-image {
+	position: absolute;
+	top: -10;
+	width: 500px;
+	height: auto;
+	visibility: hidden;
 }
 
 .header-image {
 	display: block;
 	max-width: 100px;
 	height: auto;
+}
+
+.opening-images {
+	margin-bottom: 80px;
 }
 
 picture, .photo-1, .photo-2, .photo-3 {
@@ -61,12 +79,24 @@ img {
 	margin-top: 20px;
 }
 
+.site-intro, .reviews {
+	max-width: 600px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 /*COLORS*/
 body {
-	background: #c48f7f;
+	background: #eae9e5;
 }
 
 /*TYPOGRAPHY*/
+
+body {
+	font-family: 'Libre Baskerville', serif;
+}
+
 a {
 	text-decoration: none;
 	color: black;
@@ -76,6 +106,11 @@ a {
 
 a:hover {
 	color: lightpink;
+	transition: all .2s ease-in-out;
+}
+
+.consult:hover {
+	fill: #c48f7f;
 }
 
 .quote {
@@ -118,6 +153,10 @@ picture, .photo-1, .photo-2, .photo-3 {
 
 /*BREAKPOINT 2*/
 @media (min-width: 900px) {
+	.svg-image {
+		visibility: visible;
+	}
+
 	.header-image {
 		justify-content: flex-end;
 	}	
@@ -125,16 +164,28 @@ picture, .photo-1, .photo-2, .photo-3 {
 	header a {
 		display: none;
 	}
-
-	/*BOOK CONSULTATION IN CORNER*/
+	
+	.page-content {
+		position: relative;
+		top: 200px;
+	}
 
 	.photo-1, .photo-3 {
 	left: 0;
 }
 
-.opening-images div {
+	.opening-images div {
 	gap: 10px;
 }
+}
+
+/*BREAKPOINT 3*/
+
+@media (min-width: 1300px) {
+	.page-content {
+		top:0;
+	}
+
 
 }
 

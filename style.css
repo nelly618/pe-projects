@@ -1,52 +1,85 @@
-* {
+@import 'boilerplate/css/meyer-reset.css';
+@import 'boilerplate/css/setup.css';
+
+				* {
 					box-sizing: border-box;
 				}
 
+				html {
+					scroll-behavior: smooth;
+				}
+
 				body {
-					font-family: helvetica, helvetica new, times new roman;
-					background: #D4BEB3;
+					font-family: 'PP Eiko';
+					background: #BBC1D0;
 					text-align: center;
 					margin: 0;
+					min-height: 100%;
 				}
 
-				header {
-					background:#7b876d;
-					color:#93a28f;
+				a {
+					display: inline-block;
+				}
+
+				/*START STRUCTURE*/
+
+				/*HEADER*/
+
+				.page-header {
+					/*background:#7b876d;*/
+					color: #7E6464;
 					width: 100%;
 					display: flex;
-					justify-content: space-between;
+					flex-direction: row;
 					align-items: center;
+					vertical-align: center;
+					justify-content: space-between;
 				}
 
-				header a {
+				.page-header a {
 					font-family: 'Bellair', cursive;
 					font-size: 30px;
 					font-weight: 500;
 					line-height: 1.5;
-					color:#d8d5d2;
-					margin: 15px 0;
+					color: #7E6464;
 					margin-left: 10px;
 					text-decoration: none;
+					display: inline;
+					position: relative;
+					bottom: 10px;
+				}
+
+				nameheading a:hover {
+					text-decoration: none;
+					transition: .5s ease-out;
 				}
 
 				a:hover {
 					color:#47505e;
-				}
-
-				.logo img {
-					width: 60px;
-					margin-right: 6px;
+					text-decoration: underline;
 				}
 
 				.logo:hover {
 					opacity: .4;
 				}
 
-				nav a {
+				.logo {
+					display: inline-block;
+					width: 60px;
+					height: auto;
+				}
+
+				img {
+					width: 100%;
+				}
+
+				.page-header nav a {
 					font-family: serif;
 					font-size: 18px;
 					margin-right: 10px;
 				}
+
+				/*GREETING*/
 
 				.greeting {
 					display: block;
@@ -54,6 +87,7 @@
 					margin-left: auto;
 					width: 98%;
 					max-width: 750px;
+					margin-bottom: 300px;
 				}
 
 				.work-pages {
@@ -62,22 +96,85 @@
 					max-width: 850px;
 					margin-top: 70px;
 					padding: 5px;
-					margin-bottom: 80px;
+					margin-bottom: 150px;
 				}
+
+				.social {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					gap: 5%;
+					justify-content: center;
+				}
+
+				/*PROJECTS*/
+
+				.project-title {
+					width: 100%;
+					margin-bottom: 20px;
+					padding: 15px;
+					margin-left: 0;
+				}
+
+				.work-display {
+					margin-bottom: 90px;
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					justify-content: center;
+				}
+
+				.work-display a {
+					display: block;
+					transition: all .2s ease-in-out;
+				}
+
+				.work-display a:hover {
+					opacity: .4;
+				}
+
+				.wedding {
+					display: block;
+					max-width: 300px;
+					height: auto;
+				}
+
+				.wedding img {
+					width: 100%;
+				}
+
+				/*FOOTER*/
+				
+				footer {
+					background: #99725F;
+					opacity: .2;
+					width: 100%;
+					padding: 30px;
+					margin-top: 10px;
+					position: relative;
+					bottom: 0;
+				}
+
+				/*END STRUCTURE*/
+
+
+				/*TYPOGRAPHY*/
 
 				h1 {
 					color:#7E6464;
-					font-size: 80px;
-					font-family: 'Cyrene';
-					letter-spacing: .05em;
+					font-size: 70px;
+					font-family: 'Alegreya','Cyrene', serif;
+					letter-spacing: .03em;
 					text-align: left;
 					margin: 50px 50px 0 50px ;
 				}
 
-				p {
+				p, figcaption {
 					color:#7E6464;
 					font-family:'PP Eiko';
 					font-size: 26px;
+					font-weight: lighter;
+					line-height: 1.3;
 					max-width: 70ch;
 					letter-spacing: .03em;
 					text-align: center;
@@ -86,6 +183,7 @@
 
 				.title {
 					color:#47505e;
+					font-weight: 500;
 				}
 
 				.social a {
@@ -103,10 +201,13 @@
 					transition: all .2s ease-in-out;
 				}
 
-				footer {
-					background: #99725F;
-					opacity: .2;
-					width: 100%;
-					padding: 30px;
-					margin-top: 10px;
+				.project-title {
+					color: #BBC1D0;
+					background: #47505e;
+					text-align: center;
 				}
+
+				.wedding p {
+					text-align: center;
+				}
+
