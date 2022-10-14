@@ -1,0 +1,350 @@
+/*RESET & SETUP*/
+	@import 'boilerplate/css/meyer-reset.css';
+	@import 'boilerplate/css/setup.css';
+
+/*BACKGROUND*/
+	@import 'background.css';
+
+/*SITE CREATED BY CHANELLE*/
+	* {
+		box-sizing: border-box;
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+		font-family: 'PP Eiko';
+		background: #e7ecf2;
+		text-align: center;
+		margin: 0;
+		min-height: 100%;
+		position: relative;
+		overflow: visible;
+	}
+
+	a {
+		display: inline-block;
+	}
+
+	/*START STRUCTURE*/
+
+	/*HEADER*/
+
+	.page-header {
+		color: #7E6464;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		margin-top: 4px;
+	}
+
+	.page-header nav {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 10px;
+		}
+
+	nameheading {
+		display: none;
+	}
+
+	a:hover {
+		color: white;
+		border-top: 5px solid #47505e;
+	}
+
+	.page-header nav a {
+		font-family: serif;
+		font-size: 18px;
+		margin-right: 10px;
+	}
+
+	/*GREETING*/
+
+	.greeting {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		width: 98%;
+		max-width: 750px;
+		margin-bottom: 300px;
+		z-index: 1;
+	}
+
+	.work-pages {
+		max-width: 850px;
+		margin-top: 70px;
+		padding: 5px;
+		margin-bottom: 150px;
+	}
+
+	.social {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 12px;
+		justify-content: center;
+	}
+
+	/*PROJECTS*/
+
+	.project-title {
+		width: 100%;
+		margin-bottom: 20px;
+		padding: 15px;
+		margin-left: 0;
+	}
+
+	.work-display {
+		margin-bottom: 90px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.work-display a {
+		display: block;
+		transition: all .2s ease-in-out;
+	}
+
+	.work-display a:hover {
+		opacity: .4;
+	}
+
+	.wedding {
+		display: block;
+		max-width: 300px;
+		height: auto;
+	}
+
+	.wedding img {
+		width: 100%;
+	}
+
+	/*END STRUCTURE*/
+
+	/*TYPOGRAPHY*/
+
+	.page-header nav, .work-pages h1 {
+		font-variant: small-caps;
+	}
+
+	h1 {
+		color:#7E6464;
+		font-size: 90px;
+		font-family: 'Alegreya','Cyrene', serif;
+		letter-spacing: .03em;
+		text-align: left;
+		margin: 10px 50px 0 50px ;
+	}
+
+	p, figcaption {
+		color:#7E6464;
+		font-family:'PP Eiko';
+		font-size: 26px;
+		font-weight: lighter;
+		line-height: 1.3;
+		max-width: 70ch;
+		letter-spacing: .03em;
+		text-align: center;
+		padding: 20px;
+		z-index: 4;
+	}
+
+	.title {
+		color:#47505e;
+		font-weight: 500;
+	}
+
+	.greeting {
+		z-index: 4;
+	}
+
+	.social a {
+		text-align: center;
+		text-decoration: none;
+		color:#7e6464;
+		margin: 0 35px;
+		line-height: 1.3;
+		font-size: 18px;
+	}
+
+	.social a:hover {
+		color:#47505e;
+		font-style: italic;
+		transition: all .2s ease-in-out;
+	}
+
+	.project-title {
+		color: #BBC1D0;
+		background: #47505e;
+		text-align: center;
+	}
+
+	.wedding p {
+		text-align: center;
+	}
+/*END TYPOGRAPHY*/
+
+
+/*BREAKPOINT 1*/
+	@media (min-width: 475px) {
+
+		.page-header {
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.page-header a {
+			font-family: 'Bellair', cursive;
+			font-size: 30px;
+			font-weight: 500;
+			line-height: 1.5;
+			color: #7E6464;
+			margin-left: 10px;
+			text-decoration: none;
+			position: relative;
+			bottom: 10px;
+		}
+
+		.page-header a:hover, .social a:hover {
+			background: #47505e;
+			width: 100%;
+			color: #000;
+			border: none;
+		}
+
+		.logo:hover {
+			opacity: .4;
+		}
+
+		.logo {
+			display: inline-block;
+			width: 60px;
+			height: auto;
+		}
+
+		img {
+			width: 100%;
+		}
+
+		.page-header nav {
+			flex-direction: row;
+		}
+
+		.background {
+			visibility: visible;
+		}
+
+		.circles {
+			visibility: collapse;
+		}
+
+		.circles-two {
+			margin-left: auto;
+			margin-right: auto;
+			position: fixed;
+			bottom: -495px;
+			left: 2%;
+			/*transform: rotate(90deg);*/
+			z-index: 0;
+		}
+
+		.social {
+			display: flex;
+			flex-direction: row;
+			gap: 15px;
+			align-items: center;
+		}
+
+
+	}
+
+	/*BREAKPOINT 2*/
+	@media (min-width: 650px) {
+
+		body {
+			overflow: hidden;
+		}
+
+		.background, .circles, .circles-two {
+			visibility: visible;
+		}
+
+		.circles {
+			position: fixed;
+			left: -40px;
+		}
+
+		.circles-two {
+			transform: rotate(0deg);
+			top: 70px;
+			left: 95%;
+			right: 40px;
+		}
+
+		.page-header {
+			justify-content: space-between;
+		}
+
+		nameheading {
+			display: inline-block;
+			flex-direction: row;
+			vertical-align: center;
+		}
+
+		nameheading a:hover {
+		text-decoration: none;
+		transition: .5s ease-out;
+	}
+
+		.greeting h1 {
+			transform: rotate(-30deg);
+			position: relative;
+			top: -110px;
+			left: -50px;
+		}
+	}
+
+	/*BREAKPOINT 3*/
+
+	@media (min-width: 900px) {
+		.greeting h1 {
+		position: relative;
+		top: -135px;
+		left: -130px;
+		transform: rotate(-30deg);
+	}
+
+	.circles {
+		left: 0;
+	}
+
+	.circles-two {
+		right: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

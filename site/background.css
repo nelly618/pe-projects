@@ -1,0 +1,43 @@
+	.background {
+		display: flex;
+		justify-content: space-between;
+		position: fixed;
+		visibility: hidden;
+	}
+
+	.circles-two {
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		transform: rotate(90deg);
+		z-index: 0;
+	}
+
+	.circles span:nth-child(4n + 1), 
+	.circles-two span:nth-child(4n + 1) {
+		background: #A0C9AF;
+	}
+
+	.circles span:nth-child(4n + 2),
+	.circles-two span:nth-child(4n + 2) {
+		background: #AB6668;
+	}
+
+	.circles span:nth-child(4n + 3),
+	.circles-two span:nth-child(4n + 3) {
+		background: #BBC1D0;
+	}
+
+	.circles span:nth-child(4n + 4),
+	.circles-two span:nth-child(4n + 4) {
+		background: #7E6465;
+	}
+
+	.dot {
+		display: block;
+		height: 70px;
+		width: 70px;
+		background-color: #A0C9AF;
+		border-radius: 50%;
+		opacity: .6;
+	}
