@@ -1,0 +1,130 @@
+@import "reset.css";
+@import "setup.css";
+
+/*STRUCTURE*/
+body {
+	background: #495267;
+	padding: 20px;
+	min-height: 100vh;
+	margin: 0;
+	margin-top: 15px;
+}
+
+inner-column {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 98%;
+	max-width: 700px;
+}
+
+/*HEADER*/
+.site-menu {
+	margin-bottom: 30px;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+	text-align: center;
+	margin-left: 30px;
+}
+
+nav a {
+	text-decoration: underline;
+	padding: 10px;
+}
+
+nav a.active {
+	background: #f6c325;
+	color: #434a41;
+	border-radius: 25px;
+	text-decoration: none;
+	font-weight: 700;
+	padding: 15px;
+	}
+
+nav a.inactive {
+	background: #2d50a7;
+	color: white;
+	border-radius: 25px;
+	text-decoration: none;
+	font-weight: 400;
+	padding: 15px;
+	}
+
+h1 {
+	font-size: 60px;
+	font-family: 'Pokemon Solid';
+	letter-spacing: .08em;
+	line-height: 1.5;
+}
+
+h1 .list {
+	margin-left: 20px;
+}
+
+.home-page {
+	background-image: url(https://as01.epimg.net/meristation/imagenes/2022/05/20/noticias/1653045471_530623_1653046155_noticia_normal.jpg);
+	background-position: center;
+   background-size: cover;
+	width: 100%;
+	padding: 330px;
+}
+
+.home-image {
+	visibility: hidden;
+}
+
+/*LIST*/
+
+showcard {
+	display: flex;
+	flex-direction: column;
+	background: #5a73b0;
+	margin-bottom: 20px;
+	padding: 20px;
+	max-width: 450px;
+	border-bottom: 40px solid #dddfe5;
+	border-radius: 10px;
+	box-shadow: 12px 12px 2px 1px #2c3b5f;
+}
+
+showcard a {
+	text-decoration: underline;
+}
+
+.show + .show {
+	margin-top: 30px;
+}
+
+
+/*BREAKPOINT 1*/
+
+@media (max-width: 400px) {
+	nav {
+		flex-direction: column;
+	}
+
+	.home-page {
+		background: none;
+	}
+
+	.home-image {
+	visibility: visible;
+	max-width: 400px;
+	}
+
+	h1 {
+		text-align: center;
+	}
+}
+
+@media (min-width: 850px) {
+	grid-setup {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+}

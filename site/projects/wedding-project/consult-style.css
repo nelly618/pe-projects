@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Josefin+Slab:wght@300&family=Libre+Baskerville&display=swap');
+
+
+* {
+	box-sizing: content-box;
+}
+
+body {
+	background:#4a5365;
+	font-family: 'Libre Baskerville', Sans-serif;
+	margin: 0;
+}
+
+.inner-column {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 98%;
+	max-width: 950px;
+}
+
+.left-column {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 48%;
+	max-width: 475px;
+}
+
+main {
+	width: 98%;
+	max-width: 950px;
+	height: 600px;
+	column-count: 2;
+	column-rule-width: 1px;
+	column-rule-color: #989898;
+}
+
+h1 {
+	font-family: 'Aboreto', cursive;
+	font-size: 35px;
+	font-weight: 500;
+	line-height: 1.5;
+	}
+
+address {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.right-column {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 48%;
+	max-width: 475px;
+}	
+
+.contact-info {
+	color: #c9cbcb;
+}
+
+header {
+	background: #f4ddd5;
+	opacity: .8;
+	width: 100%;
+	margin-bottom: 30px;
+	padding: 10px;
+	text-align: center;
+}
+
+.logo img {
+	width: 200px;
+}
+
+.logo a:hover {
+	opacity: .4;
+	border: none;
+}
+
+a{
+	text-decoration: none;
+	color:#222d44;
+}
+
+a:hover {
+	border-bottom: 5px double #c48f7f;
+	transition: all .2s ease-in-out;
+}
+
+/*
+.menu-links {
+	float: left;
+	margin-left: 15px;
+	padding: 10px;
+}
+*/
+
+footer {
+	background: #989898;
+	width: 98%;
+	text-align: center;
+	display: block;
+	padding: 30px;
+}
+
+footer a {
+	margin: 0 30px;
+}
+
+.social-media img {
+	width: 50;
+}
