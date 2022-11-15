@@ -15,8 +15,8 @@
 	}
 
 	body {
-		font-family: 'PP Eiko';
-		background: #e7ecf2;
+		font-family: 'PP Eiko', sans-serif;
+		background: #eae9e3;
 		text-align: center;
 		margin: 0;
 		min-height: 100%;
@@ -28,67 +28,70 @@
 		display: inline-block;
 	}
 
+	inner-column {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		width: 98%;
+		max-width: 800px;
+	}
+
 	/*START STRUCTURE*/
 
 	/*HEADER*/
 
 	.page-header {
-		color: #7E6464;
 		width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: flex-start;
-		margin-top: 4px;
 	}
 
-	.page-header nav {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			margin-top: 10px;
+	divider {
+		color: #7E6464;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 50px;
+		padding: 5px;
+		margin-bottom: 100px;
+	}
+
+	.logo {
+			display: inline-block;
+			width: 60px;
+			height: auto;
 		}
 
-	nameheading {
-		display: none;
+	img {
+		width: 100%;
 	}
 
-	a:hover {
-		color: white;
-		border-top: 5px solid #47505e;
-	}
+	divider nav {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			margin-top: 10px;
+			gap: 12px;
+			color: #7e6465;
+		}
 
-	.page-header nav a {
-		font-family: serif;
-		font-size: 18px;
-		margin-right: 10px;
-	}
+/*	INTRO*/
 
-	/*GREETING*/
-
-	.greeting {
+	about-me {
 		display: block;
-		margin-right: auto;
-		margin-left: auto;
-		width: 98%;
-		max-width: 750px;
-		margin-bottom: 300px;
-		z-index: 1;
-	}
-
-	.work-pages {
-		max-width: 850px;
-		margin-top: 70px;
-		padding: 5px;
-		margin-bottom: 150px;
+		color: #eae9e3;
+		background: #AB6668;
+		width: 100%;
+		padding: 10px;
 	}
 
 	.social {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		align-items: center;
-		gap: 12px;
-		justify-content: center;
+		justify-content: flex-end;
+		gap: 5px;
+		margin-top: 15px;
+		maegin-right: 15px;
 	}
 
 	/*PROJECTS*/
@@ -127,25 +130,77 @@
 		width: 100%;
 	}
 
+	/*FOOTER*/
+
+	.site-footer {
+		width: 100%;
+		margin-top: 150px;
+		margin-bottom: 20px;
+	}
+
+	site-map {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	contact {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		align-items: center;
+	}
+
+	contact nav {
+		display: flex;
+		flex-direction: row;
+		gap: 10px;
+		padding: 12px;
+	}
+
+	button {
+		padding: 13px;
+		border-radius: 30px;
+	}
+
+	button:hover {
+		background-color: #7e6465;
+		color: white;
+		transition: .3s ease-out;
+	}
+
 	/*END STRUCTURE*/
 
 	/*TYPOGRAPHY*/
 
-	.page-header nav, .work-pages h1 {
+	.page-header nav, .greeting h1, button, .social {
 		font-variant: small-caps;
 	}
 
+	.page-header nav a:hover {
+		font-color: #4D9B6F;
+		border-right: 2px solid #47505e;
+		border-bottom: 2px solid #47505e;
+		transition: .3s ease-out;
+	}
+
+	.page-header nav a {
+		font-family: serif;
+		font-size: 18px;
+	}
+
 	h1 {
-		color:#7E6464;
+		color:#47505e;
 		font-size: 90px;
 		font-family: 'Alegreya','Cyrene', serif;
 		letter-spacing: .03em;
 		text-align: left;
-		margin: 10px 50px 0 50px ;
+		margin: 0 10px;
 	}
 
 	p, figcaption {
-		color:#7E6464;
+		color:#eae9e3;
 		font-family:'PP Eiko';
 		font-size: 26px;
 		font-weight: lighter;
@@ -177,8 +232,8 @@
 
 	.social a:hover {
 		color:#47505e;
-		font-style: italic;
 		transition: all .2s ease-in-out;
+		border-bottom: 2px solid #47505e;
 	}
 
 	.project-title {
@@ -194,10 +249,17 @@
 
 
 /*BREAKPOINT 1*/
-	@media (min-width: 475px) {
+	@media (max-width: 500px) {
 
-		.page-header {
-			flex-direction: row;
+		divider {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 40px;
+		}
+
+		.page-header nav {
+			flex-direction: column;
 			align-items: center;
 			justify-content: center;
 		}
@@ -214,127 +276,36 @@
 			bottom: 10px;
 		}
 
-		.page-header a:hover, .social a:hover {
-			background: #47505e;
-			width: 100%;
-			color: #000;
-			border: none;
-		}
-
 		.logo:hover {
 			opacity: .4;
 		}
 
-		.logo {
-			display: inline-block;
-			width: 60px;
-			height: auto;
-		}
-
-		img {
-			width: 100%;
-		}
-
-		.page-header nav {
-			flex-direction: row;
-		}
-
-		.background {
-			visibility: visible;
-		}
-
-		.circles {
-			visibility: collapse;
-		}
-
-		.circles-two {
-			margin-left: auto;
-			margin-right: auto;
-			position: fixed;
-			bottom: -495px;
-			left: 2%;
-			/*transform: rotate(90deg);*/
-			z-index: 0;
-		}
-
 		.social {
 			display: flex;
-			flex-direction: row;
+			flex-direction: column;
 			gap: 15px;
-			align-items: center;
+			justify-content: center;
 		}
 
-
-	}
-
-	/*BREAKPOINT 2*/
-	@media (min-width: 650px) {
-
-		body {
-			overflow: hidden;
+		.site-footer {
+		width: 100%;
+		margin-top: 80px;
+		margin-bottom: 20px;
 		}
 
-		.background, .circles, .circles-two {
-			visibility: visible;
+		site-map {
+			margin-top: 10px;
+			flex-direction: column;
+			justify-content: center;
+			gap: 5px;
 		}
 
-		.circles {
-			position: fixed;
-			left: -40px;
-		}
-
-		.circles-two {
-			transform: rotate(0deg);
-			top: 70px;
-			left: 95%;
-			right: 40px;
-		}
-
-		.page-header {
-			justify-content: space-between;
-		}
-
-		nameheading {
-			display: inline-block;
-			flex-direction: row;
-			vertical-align: center;
-		}
-
-		nameheading a:hover {
-		text-decoration: none;
-		transition: .5s ease-out;
-	}
-
-		.greeting h1 {
-			transform: rotate(-30deg);
-			position: relative;
-			top: -110px;
-			left: -50px;
+		contact nav {
+			flex-direction: column;
+			gap: 10px;
+			padding: 12px;
 		}
 	}
-
-	/*BREAKPOINT 3*/
-
-	@media (min-width: 900px) {
-		.greeting h1 {
-		position: relative;
-		top: -135px;
-		left: -130px;
-		transform: rotate(-30deg);
-	}
-
-	.circles {
-		left: 0;
-	}
-
-	.circles-two {
-		right: 0;
-	}
-}
-
-
-
-
 
 
 

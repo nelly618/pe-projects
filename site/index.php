@@ -1,13 +1,44 @@
 <?php 
+	// router
+	$page = null;
+	if ( isset($_GET['page']) ) {
+		$page = $_GET['page'];
+	} else {
+		$page = "intro";
+	}
+?>
+<head>
+	<?php include('head.php');
+	?>
+</head>
+
+<body>
+
+	<header>
+
+<?php 
 	include ('header.php');
 ?>
 
+	</header>
 
-		<body>
+<main class='page-content'>
+<?php 
+	
+	if ($page == 'intro') {
+		include('intro.php');
+	}
+	if ($page == 'goals') {
+		include('goals.php');
+	}
+	if ($page == 'projects') {
+		include('projects.php');
+	}
+	if ($page == 'blog') {
+		include('blog.php');
+	}
 
-<?php include('background.php');?>
-
-<?php include('intro.php');?>
+?>
 			
 
 
@@ -24,5 +55,11 @@
 			</main>
 
 		 -->
-		</body>
-	</html>
+		 </main>
+		 <footer>
+		 	<?php 
+			include ('footer.php');
+			?>
+		 </footer>
+	</body>
+</html>
