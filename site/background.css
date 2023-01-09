@@ -2,32 +2,28 @@
 		display: flex;
 		justify-content: space-between;
 		margin-top: 15px;
+		gap: 3px;
 	}
 
-	.circles span:nth-child(4n + 1), 
+	.circles span:nth-child(3n + 1), 
 	.circles-two span:nth-child(4n + 1) {
-		background: #4D9B6F;
+		background: #000301;
 	}
 
-	.circles span:nth-child(4n + 2),
+	.circles span:nth-child(3n + 2),
 	.circles-two span:nth-child(4n + 2) {
-		background: #AB6668;
+		background: #212e6e;
 	}
 
-	.circles span:nth-child(4n + 3),
+	.circles span:nth-child(3n + 3),
 	.circles-two span:nth-child(4n + 3) {
-		background: #47505e;
-	}
-
-	.circles span:nth-child(4n + 4),
-	.circles-two span:nth-child(4n + 4) {
-		background: #7E6465;
+		background: #79dca7;
 	}
 
 	.dot {
 		display: block;
 		height: 70px;
-		width: 120px;
+		width: 70px;
 		background-color: #A0C9AF;
 		border-radius: 50%;
 	}

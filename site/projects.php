@@ -1,11 +1,3 @@
-<html lang="en">
-	<?php
-		include('head.php');
-		?>
-
-
-
-
 <style>
 	.samples h1 {
 		margin: 0;
@@ -22,7 +14,11 @@
 		transition: .2s all ease-in-out;
 	}
 
-	.RLG {
+	picture {
+		max-width: 400px;
+	}
+
+	.RLG, .E4P {
 		font-family: 'PP Eiko', sans-serif;
 		color: #47505e;
 		font-weight: 700;
@@ -30,26 +26,36 @@
 		bottom: 180px;
 		text-decoration: none;
 	}
+
+	.E4P {
+		bottom: 250px;
+	}
 </style>
 
-<body>
-<header>
 <?php 
 	include ('header.php');
 ?>
 
-</header>
 
 	<main class='selected-projects'>
 		<inner-column>
 			<div class='samples'>
 				<h1>Selected Work</h1>
 				<work-categories>
-					<a href='#'>
+					<a href='rlg.php'>
 						<picture>
 							<img src='https://www.peprojects.dev/alpha-5/chanelle/images/responsive-layout.jpeg' alt='garden image'>
 						</picture>
-						<p class='RLG'>Responsive Layout Garden</p></a>
+						<p class='RLG'>Responsive Layout Garden</p>
+					</a>
+
+					<a href='e4p.php'>
+						<picture>
+							<img src='https://www.peprojects.dev/images/portrait.jpg'>
+						</picture>
+						<p class="E4P">Exercises for Programmers</p>
+					</a>
+
 				</work-categories>
 			</div>
 		</inner-column>

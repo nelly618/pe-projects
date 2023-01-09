@@ -1,0 +1,98 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--darkblue: #020453;
+	--link: #1f46dd;
+	--button: #2c52df;
+	--background: #fbfcfc;
+}
+
+body {
+	margin: 0;
+	background: var(--background);
+	height: 100vh;
+	width: 100vw;
+}
+
+login-half a {
+	text-decoration: none;
+	color: var(--button);
+}
+
+inner-column {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 98%;
+	max-width: 800px;
+}
+
+/*STRUCTURE*/
+
+.login-page {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 20px;
+}
+
+.bank-opener {
+	background: var(--darkblue);
+	color: var(--background);
+	width: 100%;
+	padding: 50px;
+	margin-bottom: 30px;
+}
+
+login-half {
+	display: block;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.field {
+	margin-bottom: 8px;
+}
+
+button {
+	background: var(--button);
+	color: var(--background);
+	padding: 15px;
+	width: 100%;
+	border-radius: 8px;
+	margin-top: 20px;
+}
+
+
+/*BREAKPOINT*/
+
+@media (min-width: 650px) {
+	.login-page {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.bank-opener {
+		grid-column: 1/2;
+		height: 100vh;
+		align-self: center;
+	}
+
+	welcome-half {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		transform: translateY(100px);
+	}
+
+	.bank-login {
+		grid-column: 2/3;
+		padding: 50px;
+		height: 100vh;
+		place-self: center;
+		transform: translateY(100px);
+	}
+}
+
+

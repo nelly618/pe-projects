@@ -11,6 +11,7 @@
 				<nav class='social'>
 					<a href="https://github.com/nelly618/pe-projects" target='profile'>Github</a>
 					<a href="https://codepen.io/nelly618" target='profile'>CodePen</a>
+					<a href='contact.php'>Contact</a>
 				</nav>
 		</inner-column>
 	</section>

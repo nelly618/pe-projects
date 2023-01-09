@@ -1,0 +1,163 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--ink: #010201;
+	--paper: #fefefe;
+	--color: #0094ff;
+	--highlight: #ff00ae;
+}
+
+body {
+	background: var(--paper);
+	color: var(--ink);
+}
+
+inner-column {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 98%;
+	max-width: 800px;
+}
+
+/*SHAPES*/
+.circle {
+	display: inline-block;
+	border: 1px solid black;
+	border-radius: 50%;
+	background: var(--highlight);
+	width: 25px;
+	height: 25px;
+}
+
+.square {
+	display: inline-block;
+	border: 1px solid black;
+	background: var(--color);
+	width: 18px;
+	height: 18px;
+	position: relative;
+	right: 15px;
+	bottom: 13px;
+}
+
+/*STRUCTURE*/
+
+.main-content {
+	display: flex;
+	flex-direction: column;
+	gap: 35px;
+}
+
+.main-content h2 {
+	margin-bottom: 0;
+}
+
+heading-two {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 3px;
+}
+
+.heading-three {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 25px;
+	margin-bottom: 25px;
+}
+
+heading-three {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: -5px;
+}
+
+.second-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.second-header h3 {
+	margin-bottom: 0;
+}
+
+/*TYPOGRAPHY*/
+
+h5 {
+	color: var(--highlight);
+	margin-bottom: 0;
+
+}
+
+.loud-voice {
+	font-family: helvetica;
+	font-size: 28px;
+}
+
+.intro-voice {
+	font-family: sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	max-width: 60ch;
+}
+
+.strong-voice {
+	font-family: helvetica;
+	font-size: 22px;
+}
+
+.calm-voice {
+	font-family: sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	max-width: 60ch;
+}
+
+section-two .calm-voice {
+	border-top: 3px solid var(--color);
+}
+
+
+/*BREAKPOINT 1*/
+@media (min-width: 550px) {
+/*STRUCTURE*/
+
+	.heading-three {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	heading-three {
+		border: 3px solid var(--ink);
+		padding: 20px;
+	}
+
+/*	TYPOGRAPHY*/
+	.loud-voice {
+		font-size: 35px;
+	}
+
+	.intro-voice {
+		font-size: 22px;
+	}
+
+	.strong-voice {
+		font-size: 29px;
+	}
+
+	section-two .calm-voice {
+		background: var(--color);
+		padding: 20px;
+	}
+
+}
+
+
+
+
+
+
