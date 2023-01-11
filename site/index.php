@@ -7,11 +7,6 @@
 		$page = "intro";
 	}
 ?>
-<head>
-	<?php include('head.php');
-	?>
-</head>
-
 <body>
 
 	<header>
@@ -36,6 +31,15 @@
 	}
 	if ($page == 'blog') {
 		include('blog.php');
+	}
+	if ($page == 'resume') {
+		include('resume.php');
+	}
+	if ($page == 'contact') {
+		include('contact.php');
+	}
+	if ($page == 'goals') {
+		include('goals.php');
 	}
 
 ?>

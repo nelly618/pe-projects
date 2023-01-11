@@ -1,5 +1,5 @@
 				body {
-					font-family: helvetica, helvetica new, times new roman;
+					font-family: 'Apple SD Gothic Neo', sans-serif;
 					margin: 0;
 					min-height: 100vh;
 				}
@@ -20,47 +20,44 @@
 
 /*				HEADER*/
 
-				.site-header {
-					margin-bottom: 15px;
-				}
-
 				/*GOALS*/
 
 				list {
+					display: block;
 					display: grid;
-					grid-template-columns: 1fr 1fr;
-					gap: 100px;
+					grid-template-columns: repeat(2, 1fr);
+					gap: 40px;
+					margin-top: 100px;
 				}
 
-				list h2 {
-					transform: rotate(-90deg);
-					position: relative;
-					right:100px;
-					
+				goal {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					justify-content: center;
 				}
 
 				ul {
 					max-width: 65ch;
 					padding-right: 8px;
-					border: 3px solid #1a3573;
-					position: relative;
-					left: 100px;
-					bottom: 175px;
+/*					border: 3px solid #1a3573;*/
 				}
 
 				/*TYPOGRAPHY*/
 
-				.goal-head {
-					color: #a96668;
-					margin: 0;
-					position: relative;
-					top: -70px;
+				.goal-title {
+					color: #AB6668;
+					transform: rotate(-90deg);
 				}
 
+				h2 {
+					margin: 0;
+				}
+				
 				/*GOAL HEADER*/
 				
 				list h2 {
-					color: #1a3573;
+					color: #AB6668;
 					font-size: 40px;
 					line-height: 1.3;
 					padding: 15px;
@@ -77,6 +74,9 @@
 					font-size: 16px;
 					line-height: 1.2;
 				}
+
+
+
 
 				/*	BREAKPOINT 1*/
 				@media (max-width: 500px) {
@@ -109,12 +109,6 @@
 				@media (max-width: 700px) {
 					.goal-head {
 						margin-bottom: 100px;
-					}
-
-					list {
-						display: flex;
-						flex-direction: column;
-						gap: 100px;
 					}
 
 					ul {

@@ -18,6 +18,8 @@
 		'goalTwo' => "Be more confident with the use of php and functions utilized",
 
 		'goalThree' => "Be comfortable with WordPress",
+
+		'goalFour' => "Incorporate Javascript into my current work",
 	];
 
 	$endCourse = [
@@ -29,11 +31,7 @@
 
 		'goalThree' => "Make above 100k",
 
-		'goalFour' => "Find satisfaction in both my work and my place of employment with colleagues",
-
-		'goalFive' => "Continue learning new skills to maintain ease of experience for the user",
-
-		'goalSix' => "Provide freelance services",
+		'goalFour' => "Continue learning new skills to maintain ease of experience for the user",
 	];
 
 	$fiveYear = [
@@ -56,12 +54,10 @@
 		
 		echo 
 		"<goal><h2 class='goal-title'>" . $goal['title'] . "
-		</h2><ul><li>" . $goal['goalOne'] . "
+		</h2><hr><ul><li>" . $goal['goalOne'] . "
 		</li><li>" . $goal['goalTwo'] . "
 		</li><li>" . $goal['goalThree'] . "
 		</li><li>" . $goal['goalFour'] . "
-		</li><li>" . $goal['goalFive'] . "
-		</li><li>" . $goal['goalSix'] . "
 		</li></ul></goal>"
 
 		;

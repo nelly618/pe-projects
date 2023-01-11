@@ -17,9 +17,9 @@
 	body {
 		font-family: 'Apple SD Gothic Neo', sans-serif;
 		background: #f7f9f8;
-		text-align: center;
+		text-align: left;
 		margin: 0;
-		min-height: 100%;
+		min-height: 100vh;
 		position: relative;
 		overflow: visible;
 	}
@@ -32,9 +32,9 @@
 		font-variant: small-caps;
 	}
 
-	a:hover, .goals-resume a:hover {
+	a:hover, .goals-resume a:hover, .page-header nav a:hover {
 		color: #79dca7;
-		font-size: 40px;
+		font-size: 28px;
 		transition: .3s ease-out;
 	}
 
@@ -52,24 +52,17 @@
 
 	.page-header {
 		width: 100%;
+		background: #e0e0e0;
+		color: #7e6465;
 	}
 
 	divider {
-		color: #7E6464;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
-		margin-top: 50px;
-		padding: 5px;
-		margin-bottom: 100px;
+		padding: 20px;
 	}
-
-	.logo {
-			display: block;
-			width: 60px;
-			height: auto;
-		}
 
 	img {
 		width: 100%;
@@ -81,38 +74,114 @@
 			align-items: center;
 			margin-top: 10px;
 			gap: 12px;
-			color: #7e6465;
 		}
 
 /*	INTRO*/
 
-	about-me, .about-text {
+		.logo {
+			margin-top: 15px;
+			display: inline-block;
+			width: 100px;
+			height: auto;
+		}
+
+		.intro-para {
+			margin-top: 50px;
+			margin-bottom: 100px;
+			height: 50vh;
+		}
+
+		intro-title {
+			display: block;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 30px;
+			padding: 15px;
+			margin-top: 20px;
+		}
+
+		social-links {
+			display: block;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 30px;
+			justify-content: center;
+			margin-top: 50px;
+			margin-left: 50px;
+		}
+
+		social-links picture {
+			display: block;
+			width: 75px;
+		}
+
+	/*	ABOUT*/
+		
+	about {
 		display: block;
-		color: #f8f8f9;
-		background: #212e6e;
-		width: 100%;
-		padding: 10px;
-		margin: 0;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 15px;
 	}
 
-	.social {
-		color: #7E6464;
+	.goals-resume {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		gap: 40px;
+		margin-left: 30px;
+		padding: 20px;
+	}
+
+	/*	RESUME*/
+	education, skills {
+		display: block;
+		border-left: 3px solid #212e6e;;
+		padding: 15px;
+	}
+	
+	.resume-text {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 15px;
+	}
+
+	.year-education {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		justify-content: center;
-		gap: 5px;
-		margin-top: 15px;
-		margin-right: 15px;
-		padding: 15px;
+		justify-content: space-between;
+		margin-bottom: -40px;
 	}
+
+	h2 + hr {
+		margin-top: -15px;
+	}
+
 
 	/*FOOTER*/
 
 	.site-footer {
 		width: 100%;
+		background: #212e6e;
+		color: #f7f9f8;
+		padding: 30px;
 		margin-top: 150px;
-		margin-bottom: 20px;
+	}
+
+	directory {
+		display: block;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.home-links, .work-links, .about-links {
+		display: block;
+		display: flex;
+		flex-direction: column;
+		padding: 15px;
 	}
 
 	contact {
@@ -161,14 +230,10 @@
 
 	/*TYPOGRAPHY*/
 
-	.page-header nav, .greeting h1, site-map nav a, .social {
-		font-variant: small-caps;
-	}
+	/*	HEADER*/
 
-	.page-header nav a:hover {
-		font-size: 40px;
-		font-color: #79dca7;
-		transition: .3s ease-out;
+	.header-name {
+		font-size: 20px;
 	}
 
 	.page-header nav a {
@@ -177,58 +242,77 @@
 	}
 
 	h1 {
-		color:#000301;
-		font-size: 90px;
-		font-family: 'PP Eiko','Cyrene', serif;
-		letter-spacing: .03em;
-		text-align: left;
-		margin: 0 10px;
+		color: #212e6e;
+		font-family: 'Prohibition Test';
+		font-size: 45px;
+		display: inline-block;
 	}
 
-	p, figcaption, about p {
-		color: #f7f9f8;
+	h2 {
+		font-family: 'Apple SD Gothic Neo';
+		font-size: 18px;
+		margin-bottom: 10px;
+		margin-left: 30px;
+	}
+
+/*	ABOUT*/
+
+	.developer-info, .hcw-info, .regular-info {
+		border: 2px solid #000301;
+		padding: 12px;
+		border-radius: 10px;
+		}
+
+	p {
+		color: #000301;
 		font-family:'Apple SD Gothic Neo';
-		font-size: 26px;
-		font-weight: lighter;
+		font-size: 20px;
+		font-weight: 400;
 		line-height: 1.3;
 		max-width: 70ch;
 		letter-spacing: .03em;
-		text-align: center;
-		padding: 20px;
-		z-index: 4;
-	}
-
-	about p {
-		color:#000301;
 		text-align: left;
-		font-size: 20px;
-		font-weight: 400;
-		max-width: 60ch;
+		padding: 20px;
 	}
 
-	.title {
-		color: #79dca7;
-		font-weight: 500;
+	.about-images {
+		display: block;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 15px;
+		align-content: center;
+		justify-content: center;
 	}
 
-	.social a {
-		text-align: center;
-		text-decoration: none;
-		color: #000301;
-		margin: 0 35px;
-		line-height: 1.3;
-		font-size: 18px;
-		margin-top: 20px;
+	.about-images picture {
+		display: block;
+		max-width: 250px;
 	}
 
-	.social a:hover {
-		font-size: 40px;
-		color: #79dca7;
-		transition: all .2s ease-in-out;
+/*	RESUME*/
+
+	.year-education h3, .year-education p {
+		display: inline-block;
 	}
+
+	h3, h4 {
+		color: #AB6668;
+	}
+
+	h5 {
+		margin-bottom: -10px;
+	}
+
+/*	FOOTER*/
 
 	.site-footer {
 		margin-top: 50px;
+	}
+
+	directory nav a {
+		color: #f7f9f8;
+		font-size: 18px;
 	}
 
 	.footer-text {
@@ -263,10 +347,6 @@
 			font-weight: 500;
 			line-height: 1.5;
 			color: ;
-		}
-
-		.logo:hover {
-			opacity: .4;
 		}
 
 		.social {
