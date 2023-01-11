@@ -6,13 +6,15 @@
 \red96\green255\blue255;\red138\green255\blue255;\red38\green255\blue255;\red138\green255\blue255;\red38\green255\blue255;
 \red38\green255\blue255;\red255\green255\blue255;\red199\green200\blue201;\red255\green255\blue255;\red255\green255\blue255;
 \red199\green200\blue201;\red255\green255\blue255;\red25\green162\blue221;\red25\green163\blue221;\red251\green0\blue7;
-\red94\green176\blue32;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue0;}
+\red94\green176\blue32;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue0;\red255\green255\blue255;
+}
 {\*\expandedcolortbl;;\cssrgb\c100000\c100000\c100000\c0;\cssrgb\c59381\c100000\c100000;\cssrgb\c59502\c100000\c100000;
 \cssrgb\c82290\c82684\c82459;\cssrgb\c0\c0\c0;\cssrgb\c0\c1\c1;\cssrgb\c42187\c100000\c100000;\cssrgb\c42278\c100000\c100000;
 \cssrgb\c42370\c100000\c100000;\cssrgb\c59534\c100000\c99988;\cssrgb\c8611\c100000\c100000;\cssrgb\c59475\c100000\c99971;\cssrgb\c8457\c100000\c100000;
 \cssrgb\c8302\c100000\c100000;\cssrgb\c100000\c100000\c99985\c0;\cssrgb\c81961\c82353\c82745;\cssrgb\c100000\c100000\c99956\c0;\cssrgb\c100000\c100000\c99971\c0;
 \cssrgb\c82054\c82447\c82737;\cssrgb\c100000\c100000\c99970\c0;\cssrgb\c5821\c69898\c89230;\cssrgb\c6044\c70187\c89513;\cssrgb\c100000\c12195\c0;
-\cssrgb\c43067\c72927\c16222;\cssrgb\c100000\c100000\c99970\c0;\cssrgb\c0\c1\c1;\cssrgb\c0\c1\c1;}
+\cssrgb\c43067\c72927\c16222;\cssrgb\c100000\c100000\c99970\c0;\cssrgb\c0\c1\c1;\cssrgb\c0\c1\c1;\cssrgb\c100000\c100000\c99955\c0;
+}
 {\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid1\'00;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
 {\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid101\'00;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
 {\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid201\'00;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
@@ -1939,13 +1941,112 @@ Document.body.appendChild(); <- lets you add a child element into the document y
 \
 \pard\tx720\pardeftab720\partightenfactor0
 \cf22 \
+
+\f0\b Day 199 - User input with browser dialog boxes\
 \
+Yesterday\
+- 
+\f2\b0 worked more with JS and manipulated the DOM\
+- created a page using just the DOM instead of strictly HTML\
+- manipulated others pages and changed different elements\
 \
+
+\f0\b Today\
+
+\f2\b0 - get into browser dialog boxes\
+- meet with Derek\
+- work on my page for smaller screens\
+- practice a bit more with the DOM from yesterday\
 \
+
+\f0\b \cf6 \cb26 Lecture\
 \
+Dialog box 
+\f2\b0 \cb26 - a way to communicate with the user\
+	- i.e. alert to a change, warn you of the outcome of your choice, or ask for input\
 \
+\pard\tx720\pardeftab720\partightenfactor0
+\cf6 \cb26 \ul \ulc27 Video\
+\pard\tx720\pardeftab720\partightenfactor0
+\cf6 \cb26 \ulnone \
+In regards to DOM:\
 \
+document.body.appendChild() = add to end of the document\
+document.body.prependChild() = add to the beginning of the document
+\f0\b \cf22 \cb16 \
+
+\f2\b0 \
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\cf6 \cb26 \
+Alert - a JS function which creates a pop-up box on the page.\
+	- alert(\'91\'92);\
+Confirm - function that takes a prompt of some sort; gives you option to cancel or confirm.\
+	- if you say okay (yes) it returns as true; if you cancel, it returns as false\
+	- gives you a boolean value\
+Prompt - asks you a question and has a text field that you type your answer into\
+	- returns the answer as a response (whether number or otherwise)\
 \
+
+\f0\b \cb26 Where do these functions come from\
+
+\f2\b0 \cb26 - the browser is basically a JS window (the entire window is a JS object)\
+- when you type in window, it will show you the functions available\cb29 \
+\cb26 - everything is on the window object (so when you write an alert, it is actually \'85 window.alert(\'91\'92);\
+	- but because everything is on the window, the \'91window\'92 part is automatically assumed\
+	- window is global; everything is in the scope of window\
+\
+How to create a prompt and respond\
+	- create a variable with the prompt\
+	- after receiving an answer, create an alert that includes the variable created via concatenation \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic CleanShot 2023-01-11 at 12.15.09@2x.png \width7980 \height4400 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+
+\fs30 \
+How to create these functions and reuse them instead of having to type it in each time\
+	- function test() \{\
+		console.log(\'91\'92);\
+	\}\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic CleanShot 2023-01-11 at 12.25.57@2x.png \width7420 \height3080 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+
+\fs30 1st one - prompts a question and looks for a response, but has no conditional logic if there is no actual input from the user\
+2nd one - has conditional logic, but just disappears without the secondary message if there is no answer
+\fs24 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic CleanShot 2023-01-11 at 12.28.41@2x.png \width7480 \height3020 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+
+\fs30 3rd one - has conditional logic and is set to ask a question if there is no input, and then brings user back to initial prompt until an answer is inputted
+\fs36 \cf22 \cb16 \expnd0\expndtw0\kerning0
+\
+\pard\tx720\pardeftab720\partightenfactor0
+
+\fs30 \cf22 \
+\cf6 \cb26 \
+How to insert a button that performs a function\cf22 \cb16 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic CleanShot 2023-01-11 at 12.38.00@2x.png \width7380 \height7660 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+
+\fs30 addEventListenter(\'91\'92, fx); - how to make it so when a certain event is done, (click, hover, etc.) the function set for it will then run\cf22 \cb16 \expnd0\expndtw0\kerning0
+\
+\pard\tx720\pardeftab720\partightenfactor0
+\cf22 \
 \
 \
 \
