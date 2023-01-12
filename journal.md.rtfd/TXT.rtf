@@ -2084,13 +2084,78 @@ start to work on the portfolio workthrough Derek and i discussed yesterday\
 
 \f0\b \cf6 \cb27 Lecture\
 
-\f2\b0 - \
+\f2\b0 - objects in JS are like associate arrays in PHP\
+	- objects don\'92t really keep their order, arrays do\
+- Arrays in JS have ability to list their own items via .forEach function in JS\
+- when you use JS, you want to know what\'92s on the page first, so the <script> goes at the bottom of the page\
+- getting things onto the page takes a while. Console.log() lets you check to see if things are working before you get to the end and realize it\'92s not functioning properly (you can see the answers in the DOM)\
+	- console.log is just for the coder to check things in the console/browser\
+- arrays and strings both have length properties\
 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic CleanShot 2023-01-12 at 11.36.28@2x.png \width10800 \height4740 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\
 \
+
+\fs30 Example of an array and using the forEach function to try and create a list.\
+	- For (setup, condition, increment)\
 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic CleanShot 2023-01-12 at 11.59.43@2x.png \width11040 \height8620 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
 \
+
+\fs30 1. Setup a function (shoutName)\
+2. Created an array (myArray)\
+3. Created another function that would need an array and a function inputted to run\
+4. For each output (start with the array object in position 0; as long as the object is numbered less than the total number of array objects, then utilize it in the function)\
+5. Run the function with each input\
+\cf6 \cb27 \expnd0\expndtw0\kerning0
 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic CleanShot 2023-01-12 at 14.01.07@2x.png \width10060 \height9660 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
 \
+
+\f0\b\fs30 Keep looking over this to be sure it makes sense!\
 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f2\b0\fs24 \cf0 {{\NeXTGraphic CleanShot 2023-01-12 at 14.24.53@2x.png \width10500 \height13960 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+
+\f0\b\fs30 This too.\
+\
+
+\f2\b0 - Arrays already have a built-in function so that you can run whatever function you choose to put into it\
+	- (. I.e. myArray.forEach(  function () \{   \
+		  \});   )\
+\
+	- passing in unnamed function as an argument. Basically does all of the doThings function without having to write it all out!\
+\
+		- you get to put 3 items into Function parentheses (1. Item, 2. index, 3. Full array)\cf6 \cb27 \expnd0\expndtw0\kerning0
+\
+\pard\tx720\pardeftab720\partightenfactor0
+\cf6 \
+
+\f0\b In summary
+\f2\b0 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic CleanShot 2023-01-12 at 14.37.57@2x.png \width14060 \height7780 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs30 \cf6 \cb27 \expnd0\expndtw0\kerning0
+\
+\pard\tx720\pardeftab720\partightenfactor0
+\cf6 \
 \
 }

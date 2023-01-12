@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>JS Day 4</title>
+
+		<style>
+			body {
+				background: red;
+			}
+		</style>
+	</head>
+		<body>
+		
+			<h1 class='welcome-message'>JS DAY 4</h1>
+
+			<p>I'm the first paragraph.</p>
+
+			<p>This is another paragraph.</p>
+
+
+			<script>
+
+				var exampleArray = ['actors', 'badmouth', 'cattail', 'dogstooth', 'bear'];
+
+				function shoutName(name) {
+					console.log(name + '!!');
+				}
+
+				function printItem(item, index) {
+					var listItem = document.createElement('li');
+					listItem.textContent = index + " " + item;
+					listItem.classList.add('item');
+					document.body.appendChild(listItem);
+				}
+
+				// for (var current = 0; current < exampleArray.length; current++) {
+				// 	console.log('->', exampleArray[current]);
+				// }
+
+				var myArray = ['Tuggles', 'Butter', 'Brooklyn', 'Desi', 'Sammy'];
+
+				// for (var current = 0; current < myArray.length; current++) {
+				// 	shoutName(myArray[current]);
+				// }
+
+				function doThings(anArray, aFunction) {
+					for (var i = 0; i < anArray.length; i++) {
+					aFunction(anArray[i], i, anArray);
+				}
+			}
+
+				// doThings(myArray, printItem);
+				// doThings(exampleArray, shoutName);
+
+
+				myArray.forEach( function(hi, index, fullArray) {
+					console.log(hi, index, fullArray);
+				});
+
+
+			</script>
+
+		</body>
+</html>
