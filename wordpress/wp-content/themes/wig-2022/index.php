@@ -3,9 +3,18 @@
 <?php get_header(); ?>
 
 
+<?php $page = null;
+	if ( isset($_GET['page']) ) {
+		$page = $_GET['page'];
+	} else {
+		$page = "home";
+	}
+
+	?>
+
 <?php 
 	if ( is_page('home') ) {
-		echo "<h1>Home</h1>";
+		include('home');
 		}
 
 	if ( is_page('list') ) {
@@ -25,6 +34,10 @@
 		if ( is_singular('wigs') ) {
 			echo "<h1>" . the_field('name') . "</h1>";
 		}
+
+	if ( is_404() ) {
+		include ('page-not-found.php');
+	}
 
 	?>
 

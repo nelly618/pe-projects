@@ -14,5 +14,100 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 body {
-	background: lightgreen;
+	background: #efefef;
+	margin: 0;
+	min-height: 100vh;
 }
+
+inner-column {
+	display: block;
+	width: 98%;
+	max-width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*STRUCTURE*/
+
+/*HEADER*/
+
+header {
+	background: #201e1e;
+	color: #b0afaf;
+	padding: 10px;
+}
+
+.site-top {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.site-top h3 {
+	font-size: 20px;
+	letter-spacing: .02em;
+}
+
+nav a {
+	color: red;
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+main h1 {
+	font-family: helvetica, sans-serif;
+	font-size: 60px;
+	text-align: center;
+	line-height: 1.3;
+	letter-spacing: .03em;
+	margin-bottom: 3px;
+}
+
+h4 {
+	text-align: center;
+	margin-top: 5px;
+}
+
+/*LIST*/
+
+.list-opener {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 15px;
+}
+
+.list-opener p {
+	max-width: 60ch;
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+/*404*/
+.error-section div {
+	text-align: center;
+}
+
+/*FOOTER*/
+
+.page-footer {
+	background: #848484;
+	width: 100%;
+}
+
+.footer-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+
+/*TYPOGRAPHY*/
+
+.footer-links a {
+	color: #efefef;
+}
+

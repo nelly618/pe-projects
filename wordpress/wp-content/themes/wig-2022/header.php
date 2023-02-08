@@ -19,8 +19,20 @@
 
 <body class='<?php body_class();?>'>
 	<header>
-		<h1>header</h1>
+		<inner-column>
+			<div class='site-top'>
+				<h3><a href='home.php'>Wig Plaza</a></h3>
+				<nav>
+					<a href='#'>About</a>
+					<a href='#'>New</a>
+					<a href='#'>Sales</a>
+				</nav>
+			</div>
+		</inner-column>
 	</header>
 	
 	<main class='page-content'>
-	
+		<inner-column>
+			<h1>Wig Plaza</h1>
+			<h4><em>Your one-stop shop for your wig needs</em></h4>
+		</inner-column>

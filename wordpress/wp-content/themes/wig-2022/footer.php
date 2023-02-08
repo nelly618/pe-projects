@@ -1,13 +1,19 @@
 
 		</main>
 
-		<footer>
-			<h2>footer</h2>
-			<p class='calm-voice'>
-				<?php echo date ("Y"); ?> and beyond
-			</p>	
-		</footer>
+		<footer class='page-footer'>
+			<inner-column>
+				<nav class='footer-links'>
+					<a href='#'>Terms</a>
+					<a href='#'>Privacy Policy</a>
+					<a href='#'>404 Error</a>
 
-		<?php wp_footer(); ?>
+				</nav>
+
+				<p class='calm-voice'>
+					<?php echo date ("Y"); ?> and beyond
+				</p>	
+			</inner-column>
+		</footer>
 	</body>
 </html>
