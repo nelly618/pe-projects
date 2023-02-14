@@ -1,0 +1,34 @@
+[
+	{
+		"heading": "End of week",
+		"goals": {
+			"Goal One": "Be sure I understand the concepts from the week",
+			"Goal Two": "Update my published sites with new techniques learned",
+			"Goal Three": "Meet with my mentor and different classmates to discuss current lessons"
+	}
+	},
+	{
+		"heading": "End of month",
+		"goals": {
+			"Goal One": "Be more confident with the use of php, WP, and functions utilized",
+			"Goal Two": "Continue work on abilities with basic graphics",
+			"Goal Three": "Continually look for new inspiration to keep my work and site current"
+		}
+	},
+	{
+		"heading": "End of course",
+		"goals": {
+			"Goal One": "Confidence in my abilities to provide clean, intuitive design",
+			"Goal Two": "Obtain an entry to mid-level position making above 100k",
+			"Goal Three": "Continue learning new skills to maintain ease of experience for the user"
+		}
+	},
+	{
+		"heading": "Five Year Plan",
+		"goals": {
+			"Goal One": "Work in a remote position",
+			"Goal Two": "Over 200k compensation",
+			"Goal Three": "WLB that allows me to work from any location (including traveling)"
+		}
+	}
+]

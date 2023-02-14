@@ -1,0 +1,50 @@
+/*GENERAL*/
+
+body {
+	color: #444;
+}
+
+a:hover, nav a:hover {
+	color: #79dca7;
+	transition: .3s ease-out;
+}
+
+p {
+	font-family: 'Kollektif';
+}
+
+/*HEADER*/
+
+.site-header {
+	color: #212e6e;
+}
+
+.header-name a {
+	font-family: 'Avenir';
+	font-size: 28px;
+	font-weight: 700;
+	color: #212e6e;
+}
+
+.site-header nav a {
+	font-family: 'Avenir';
+	font-size: 24px;
+	font-weight: 600;
+	color: #212e6e;
+}
+
+
+/*	FOOTER*/
+
+directory nav a {
+	color: #f7f9f8;
+	font-size: 18px;
+}
+
+.footer-text {
+	color: #000301;
+	font-size: 20px;
+	font-weight: 500;
+	margin-top: 0;
+	padding: 0;
+}

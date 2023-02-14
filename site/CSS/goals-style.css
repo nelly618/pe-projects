@@ -2,7 +2,14 @@
 					font-family: 'Apple SD Gothic Neo', sans-serif;
 					margin: 0;
 					min-height: 100vh;
+					display: flex;
+					flex-direction: column;
 				}
+
+				main {
+					flex-grow: 1;
+				}
+
 
 				a {
 					display: inline-block;
@@ -17,8 +24,6 @@
 				}
 
 				/*START STRUCTURE*/
-
-/*				HEADER*/
 
 				/*GOALS*/
 
@@ -80,9 +85,6 @@
 
 				/*	BREAKPOINT 1*/
 				@media (max-width: 500px) {
-					.goal-head {
-						text-align: center;
-					}
 
 					goal {
 						display: flex;

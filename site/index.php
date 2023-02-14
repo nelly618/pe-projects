@@ -7,15 +7,6 @@
 		$page = "intro";
 	}
 ?>
-<body>
-
-	<header>
-
-<?php 
-	include ('header.php');
-?>
-
-	</header>
 
 <main class='page-content'>
 <?php 
@@ -44,10 +35,6 @@
 
 ?>
 		 </main>
-		 <footer>
-		 	<?php 
-			include ('footer.php');
-			?>
-		 </footer>
+
 	</body>
 </html>

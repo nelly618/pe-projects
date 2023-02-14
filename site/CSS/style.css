@@ -1,11 +1,10 @@
 /*RESET & SETUP*/
 	@import 'boilerplate/css/meyer-reset.css';
 	@import 'boilerplate/css/setup.css';
-
-/*BACKGROUND*/
-	@import 'background.css';
+	@import 'typography.css';
 
 /*SITE CREATED BY CHANELLE*/
+/*STRUCTURE*/
 	* {
 		box-sizing: border-box;
 	}
@@ -15,27 +14,23 @@
 	}
 
 	body {
-		font-family: 'Apple SD Gothic Neo', sans-serif;
+		font-family: 'Kollektif', sans-serif;
 		background: #f7f9f8;
 		text-align: left;
 		margin: 0;
 		min-height: 100vh;
-		position: relative;
-		overflow: visible;
+		display: flex;
+		flex-direction: column;
+	}
+
+	main {
+		flex-grow: 1;
 	}
 
 	a, .goals-resume a {
-		font-family: serif;
 		display: inline-block;
-		color: #000301;
+/*		color: #000301;*/
 		text-decoration: none;
-		font-variant: small-caps;
-	}
-
-	a:hover, .goals-resume a:hover, .page-header nav a:hover {
-		color: #79dca7;
-		font-size: 28px;
-		transition: .3s ease-out;
 	}
 
 	inner-column {
@@ -50,31 +45,9 @@
 
 	/*HEADER*/
 
-	.page-header {
-		width: 100%;
-		background: #e0e0e0;
-		color: #7e6465;
-	}
-
-	divider {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-between;
-		padding: 20px;
-	}
-
 	img {
 		width: 100%;
 	}
-
-	divider nav {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			margin-top: 10px;
-			gap: 12px;
-		}
 
 /*	INTRO*/
 
@@ -113,25 +86,25 @@
 
 		social-links picture {
 			display: block;
-			width: 75px;
+			max-width: 75px;
 		}
 
 	/*	ABOUT*/
-		
-	about {
-		display: block;
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 15px;
-	}
 
 	.goals-resume {
 		display: flex;
 		flex-direction: row;
-		justify-content: flex-start;
-		gap: 40px;
-		margin-left: 30px;
+		align-content: center;
+		justify-content: center;
+		margin-top: 12px;
+		gap: 50px;
 		padding: 20px;
+	}
+
+	.resume, .goals {
+		background:#f7f9f8;
+		padding: 15px;
+		border-radius: 15px;
 	}
 
 	/*	RESUME*/
@@ -168,6 +141,7 @@
 		color: #f7f9f8;
 		padding: 30px;
 		margin-top: 150px;
+		position: sticky;
 	}
 
 	directory {
@@ -198,16 +172,6 @@
 		padding: 12px;
 	}
 
-	site-map nav a {
-		text-decoration: small-caps;
-	}
-
-	site-map nav a:hover {
-		font-size: 40px;
-		transition: .3s ease-out;
-		padding: 0;
-	}
-
 /*	CONTACT PAGE*/
 	contact {
 		display: block;
@@ -232,17 +196,8 @@
 
 	/*	HEADER*/
 
-	.header-name {
-		font-size: 20px;
-	}
-
-	.page-header nav a {
-		font-family: serif;
-		font-size: 18px;
-	}
-
 	h1 {
-		color: #212e6e;
+/*		color: #212e6e;*/
 		font-family: 'Prohibition Test';
 		font-size: 45px;
 		display: inline-block;
@@ -304,36 +259,19 @@
 		margin-bottom: -10px;
 	}
 
-/*	FOOTER*/
-
-	.site-footer {
-		margin-top: 50px;
-	}
-
-	directory nav a {
-		color: #f7f9f8;
-		font-size: 18px;
-	}
-
-	.footer-text {
-		color: #000301;
-		font-size: 20px;
-		font-weight: 500;
-		margin-top: 0;
-		padding: 0;
-	}
-
 /*END TYPOGRAPHY*/
 
 
 /*BREAKPOINT 1*/
 	@media (max-width: 500px) {
 
+/*		HEADER*/
+
 		divider {
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			margin-bottom: 40px;
+			margin-bottom: 10px;
 		}
 
 		.page-header nav {
@@ -342,27 +280,80 @@
 			justify-content: center;
 		}
 
-		.page-header a {
-			font-size: 30px;
-			font-weight: 500;
-			line-height: 1.5;
-			color: ;
+/*		INTRO*/
+
+		.logo {
+			margin-top: 15px;
+			display: inline-block;
+			max-width: 100px;
+			height: auto;
 		}
 
-		.social {
+/*		NOT SURE ABOUT THIS ONE*/
+
+		.intro-para {
+			margin-top: 20px;
+			margin-bottom: 100px;
+			min-height: 70vh;
+		}
+
+		intro-title {
+			flex-direction: column;
+			align-items: center;
+			gap: 15px;
+			padding: 10px;
+			margin-top: 20px;
+		}
+
+		intro-title h1 {
+			text-align: center;
+		}
+
+		social-links {
 			display: flex;
 			flex-direction: column;
 			gap: 15px;
+			align-items: center;
 			justify-content: center;
+			margin-top: 30px;
+/*			margin-left: 50px;*/
 		}
 
-		.site-footer {
-		width: 100%;
-		margin-top: 80px;
-		margin-bottom: 20px;
+		social-links picture {
+			display: block;
+			max-width: 75px;
 		}
+
+/*		ABOUT*/
+		about {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
 	}
 
+/*	RESUME*/
+	
+	.year-education {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: -40px;
+	}
+
+	.year-education h3 {
+		margin-bottom: -20px;
+	}
+
+	.year-education p {
+		margin-bottom: 30px;
+	}
+
+	section + h5 {
+		margin-top: 1px;
+		margin-bottom: 15px;
+	}
+
+/*	GOALS*/
 
 
 

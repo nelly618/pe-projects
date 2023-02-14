@@ -15,15 +15,13 @@
 	}
 
 	picture {
-		max-width: 400px;
+		max-width: 250px;
 	}
 
 	.RLG, .E4P {
 		font-family: 'PP Eiko', sans-serif;
 		color: #47505e;
 		font-weight: 700;
-		position: relative;
-		bottom: 180px;
 		text-decoration: none;
 	}
 
@@ -39,12 +37,22 @@
 
 	<main class='selected-projects'>
 		<inner-column>
+			<section class="rlg">
+				<picture>
+					<img src='https://www.peprojects.dev/alpha-5/chanelle/images/responsive-layout.jpeg' alt='garden image'>
+				</picture>
+				<h3>Responsive Layout Garden</h3>
+				<p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Ea, maxime.</p>
+			</section>
+			
+
+
 			<div class='samples'>
 				<h1>Selected Work</h1>
 				<work-categories>
 					<a href='rlg.php'>
 						<picture>
-							<img src='https://www.peprojects.dev/alpha-5/chanelle/images/responsive-layout.jpeg' alt='garden image'>
+							
 						</picture>
 						<p class='RLG'>Responsive Layout Garden</p>
 					</a>
@@ -61,12 +69,9 @@
 		</inner-column>
 	</main>
 
-	<footer>
-
 <?php 
 	include ('footer.php');
 ?>
 
-		</footer>
 	</body>
 </html>

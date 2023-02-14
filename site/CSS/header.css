@@ -1,0 +1,33 @@
+site-header {
+	width: 100%;
+	margin: 0;
+}
+
+.site-header inner-column {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 98%;
+	max-width: 1200px;
+}
+
+divider {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+divider nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 10px;
+	gap: 12px;
+	}
+
+.site-header a:hover, nav a:hover {
+	color: #79dca7;
+	transition: .3s ease-out;
+}
