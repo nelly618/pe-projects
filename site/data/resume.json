@@ -1,0 +1,55 @@
+{
+	"pageTitle": "Resume",
+	"introduction": "Cover letter / intro",
+
+	"sections": [
+		{
+			"heading": "Education",
+			"experiences": [
+				{
+					"name": "Perpetual Education: Design for the Web",
+					"location": "Virtual Education",
+					"time": "June 2022 - present"
+				},
+				{
+				"name": "Nova Southeastern University",
+				"location": "Ft. Lauderdale, FL",
+				"time": "May 2017 - August 2019",
+				"degree": "Master of Medical Sciences in Physician Assistant"
+				},
+				{
+					"name": "Duke University",
+					"location": "Durham, NC",
+					"time": "August 2012 - May 2016",
+					"degree": "Bachelor of Arts: Biology, Spanish Minor"
+				}
+		]
+		},
+		{
+			"expertise": "Skills",
+			"experiences": [
+				{
+					"category": "Languages",
+					"subsection": "HTML, CSS, PHP, JSON, JS"
+				},
+				{
+					"category": "Tools",
+					"subsection": "Affinity Designer, Whimsical, CodePen, Figma"
+				},
+				{
+					"category": "Design",
+					"subsection": "User Experience Design, Rapid Prototyping, Design Thinking, Graphic Design"
+				},
+				{
+					"category": "Other",
+					"subsection": "Web Development Best Practices Knowledge"
+				},
+				{
+					"category": "Soft Skills",
+					"subsection": "Effective Communicator, Problem-solving Skills, Quick Learner, Adaptable, Compassionate, Hardworking, Analytical, Collaborative worker"
+				}
+			]
+		}
+
+	]
+}

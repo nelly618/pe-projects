@@ -1,3 +1,5 @@
+<?php include('functions.php'); ?>
+
 <?php 
 	// router
 	$page = null;
