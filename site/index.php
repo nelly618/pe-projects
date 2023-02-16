@@ -1,5 +1,7 @@
 <?php include('functions.php'); ?>
 
+<?php include('header.php'); ?>
+
 <?php 
 	// router
 	$page = null;
@@ -37,6 +39,8 @@
 
 ?>
 		 </main>
+
+		 <?php include('footer.php'); ?>
 
 	</body>
 </html>

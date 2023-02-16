@@ -17,6 +17,7 @@ body {
 	background: #efefef;
 	margin: 0;
 	min-height: 100vh;
+	display: flex;
 }
 
 inner-column {
@@ -28,6 +29,11 @@ inner-column {
 }
 
 /*STRUCTURE*/
+
+main {
+	flex-grow: 1;
+}
+
 
 /*HEADER*/
 

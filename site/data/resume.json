@@ -12,10 +12,10 @@
 					"time": "June 2022 - present"
 				},
 				{
-				"name": "Nova Southeastern University",
-				"location": "Ft. Lauderdale, FL",
-				"time": "May 2017 - August 2019",
-				"degree": "Master of Medical Sciences in Physician Assistant"
+					"name": "Nova Southeastern University",
+					"location": "Ft. Lauderdale, FL",
+					"time": "May 2017 - August 2019",
+					"degree": "Master of Medical Sciences in Physician Assistant"
 				},
 				{
 					"name": "Duke University",
@@ -27,7 +27,7 @@
 		},
 		{
 			"expertise": "Skills",
-			"experiences": [
+			"qualities": [
 				{
 					"category": "Languages",
 					"subsection": "HTML, CSS, PHP, JSON, JS"
