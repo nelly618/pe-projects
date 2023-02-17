@@ -1,34 +1,6 @@
-<style>
-	form {
-		background: lightgray;
-		padding: 10px;
-		border-radius: 20px;
-		max-width: 400px;
-	}
+<link rel='stylesheet' href='../../../CSS/form-style.css'>
 
-	label, input {
-		display: block;
-	}
-
-	input {
-		width: 80px;
-	}
-
-	.field + .field, button[type='submit'] {
-		margin-top: 10px;
-	}
-
-	.title {
-		font-family: helvetica;
-		font-size: 24px;
-		font-weight: 700;
-	}
-
-	p {
-		max-width: 70ch;
-		font-size: 16px;
-	}
-</style>
+<a href="../../../e4p-index.php">Back to the all E4P forms</a>
 
 <?php
 

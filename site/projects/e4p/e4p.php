@@ -29,6 +29,7 @@
 	}
 
 	calculations {
+		display: block;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
@@ -37,8 +38,6 @@
 	}
 
 </style>
-
-<?php require('header.php')?>
 
 <div>
 	<inner-column>
@@ -55,14 +54,18 @@
 			<h2>Calculations</h2>
 			<p>More complex formulas utilizing formulas for numerical conversions as well as some real-world financial programs.</p>
 
-			<a href='projects/e4p/e4p-8.php'>Pizza Party</a>
+			<details>
+				<summary>
+					PHP forms
+				</summary>
+				<ul>
+					<li><a href='projects/e4p/PHP/e4p-8.php'>Pizza Party</a></li>
 
-			<a href='projects/e4p/e4p-10.php'>Self-Checkout</a>
+					<li><a href='projects/e4p/PHP/e4p-10.php'>Self-Checkout</a></li>
 
-			<a href='projects/e4p/e4p-12.php'>Simple Interest Calculator</a>
+					<li><a href='projects/e4p/PHP/e4p-12.php'>Simple Interest Calculator</a></li>
+				</ul>
+			</details>
 		</calculations>
 	</inner-column>
 </div>
-
-
-<?php include('footer.php')?>

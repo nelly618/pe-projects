@@ -1,3 +1,8 @@
+<link rel='stylesheet' href='../../../CSS/form-style.css'>
+
+<a href="../../../e4p-index.php">Back to the all E4P forms</a>
+
+
 <h1>Computing Simple Interest</h1>
 
 <?php

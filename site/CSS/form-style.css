@@ -1,0 +1,29 @@
+	form {
+		background: lightgray;
+		padding: 10px;
+		border-radius: 20px;
+		max-width: 400px;
+	}
+
+	label, input {
+		display: block;
+	}
+
+	input {
+		width: 80px;
+	}
+
+	.field + .field, button[type='submit'] {
+		margin-top: 10px;
+	}
+
+	.title {
+		font-family: helvetica;
+		font-size: 24px;
+		font-weight: 700;
+	}
+
+	p {
+		max-width: 70ch;
+		font-size: 16px;
+	}

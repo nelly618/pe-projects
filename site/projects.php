@@ -1,4 +1,4 @@
-<style>
+<!-- <style>
 	.samples h1 {
 		margin: 0;
 	}
@@ -28,15 +28,27 @@
 	.E4P {
 		bottom: 250px;
 	}
-</style>
+</style> -->
 
 <?php 
 	include ('header.php');
 ?>
 
 
+<?php
+	$json = file_get_contents('data/projects.json');
+	$projects = json_decode($json, true);
+	?>
+
+
 	<main class='selected-projects'>
 		<inner-column>
+			<h1>Projects</h1>
+
+			
+
+
+
 			<section class="rlg">
 				<picture>
 					<img src='https://www.peprojects.dev/alpha-5/chanelle/images/responsive-layout.jpeg' alt='garden image'>
@@ -57,7 +69,7 @@
 						<p class='RLG'>Responsive Layout Garden</p>
 					</a>
 
-					<a href='e4p.php'>
+					<a href='e4p-index.php'>
 						<picture>
 							<img src='https://www.peprojects.dev/images/portrait.jpg'>
 						</picture>

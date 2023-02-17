@@ -1,0 +1,43 @@
+[
+	{
+		"title": "Example project name",
+		"classification": "example-project-name",
+		"introduction": "This project is great...",
+		"link": "https://outside.link",
+		"featured": true,
+		"case-study": [
+			{
+				"module": "generic-text"
+			},
+			{
+				"module": "generic-text"
+			},
+			{
+				"module": "generic-text"
+			},
+			{
+				"module": "project-spotlight"
+			}
+		]
+	},
+	{
+		"title": "Another Example project name",
+		"classification": "example-project-name-too",
+		"introduction": "This project is great...",
+		"link": "https://outside.link",
+		"case-study": [
+			{
+				"module": "generic-text"
+			},
+			{
+				"module": "generic-text"
+			},
+			{
+				"module": "generic-text"
+			},
+			{
+				"module": "project-spotlight"
+			}
+		]
+	}
+]
