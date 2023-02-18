@@ -1,43 +1,29 @@
 [
 	{
-		"title": "Example project name",
-		"classification": "example-project-name",
-		"introduction": "This project is great...",
-		"link": "https://outside.link",
-		"featured": true,
-		"case-study": [
-			{
-				"module": "generic-text"
-			},
-			{
-				"module": "generic-text"
-			},
-			{
-				"module": "generic-text"
-			},
-			{
-				"module": "project-spotlight"
-			}
-		]
+		"title": "Responsive Layout Garden",
+		"classification": "responsive-layout",
+		"description": "This project is great...",
+		"image": "https://peprojects.dev/alpha-5/chanelle/images/project-images/responsive-layout-image.jpeg",
+		"altText": "Garden image",
+		"link": "projects/responsive-garden",
+		"featured": true
 	},
 	{
-		"title": "Another Example project name",
-		"classification": "example-project-name-too",
-		"introduction": "This project is great...",
+		"title": "Exercises for Programmers",
+		"classification": "programmer-exercises",
+		"description": "This project is great...",
+		"image": "https://peprojects.dev/alpha-5/chanelle/images/project-images/e4p-image.jpeg",
+		"altText": "Exercises for Programmers image",
+		"link": "projects/e4p",
+		"featured": true
+	},
+	{
+		"title": "Project Samples",
+		"classification": "project-samples",
+		"description": "This project is great...",
+		"image": "",
+		"altText": "",
 		"link": "https://outside.link",
-		"case-study": [
-			{
-				"module": "generic-text"
-			},
-			{
-				"module": "generic-text"
-			},
-			{
-				"module": "generic-text"
-			},
-			{
-				"module": "project-spotlight"
-			}
-		]
+		"featured": true
 	}
 ]

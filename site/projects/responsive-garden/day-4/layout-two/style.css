@@ -1,0 +1,125 @@
+/*GENERAL STRUCTURE*/
+
+* {
+	box-sizing: content-box;
+}
+
+body {
+	margin: 0;
+	margin-top: 15px;
+	color: #000;
+	min-height: 100vh;
+	position: relative;
+}
+
+inner-column {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 98%;
+	max-width: 1200px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-weight: 500;
+}
+
+picture {
+	display: block;
+	max-width: 700px;
+	border: 1px solid black;
+}
+
+img {
+	width: 100%;
+}
+
+/*TOPPER*/
+
+topper {
+	display: block;
+	padding: 0.25px;
+}
+
+.page-topper {
+	background-color: #191919;
+	color: #fdfefe;
+	overflow: hidden;
+}
+
+/*HEADER*/
+
+.site-header {
+	width: 100%;
+	border: 2px solid black;
+	display: grid;
+	grid-template-columns: auto max-content max-content max-content max-content;
+}
+
+.site-header a {
+	border: 1px solid black;
+	padding: 20px;
+	font-weight: bold;
+	align-self: center;
+}
+
+svg {
+	display: inline-block;
+	padding: 5px;
+	height: 50px;
+	fill- black;
+}
+
+/*PAGE CONTENT*/
+
+diss-intro {
+	margin-top: 50px;
+	display: block;
+	display: grid;
+	grid-template-columns: 40% 60%;
+	grid-gap: 20px;
+	padding: 20px;
+}
+
+.page-text {
+	display: flex;
+	flex-direction: column;
+	gap: -80px;
+}
+
+figure {
+	align-self: center;
+}
+
+
+/*TYPOGRAPHY*/
+
+h1 {
+	font-family: futura;
+	font-size: 80px;
+	margin-bottom: 0;
+	line-height: 1;
+}
+
+p {
+	font-family: 'American Typewriter';
+	font-size: 18px;
+	max-width: 60ch;
+	line-height: 1.5;
+	font-weight: 400;
+}
+
+button {
+	background: black;
+	color: #fff904;
+	padding: 15px;
+	width: 175px;
+}
+
+
+
+
+
+

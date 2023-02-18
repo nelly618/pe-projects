@@ -1,4 +1,5 @@
-<link rel='stylesheet' href='CSS/graphic-dipytch.css'>
+<link rel='stylesheet' href='../CSS/graphic-dipytch.css'>
+<?php include('../header.php') ?>
 
 <main class='main-content'>
 	<inner-column>
@@ -20,7 +21,7 @@
 
 				$image = "https://peprojects.dev/alpha-5/chanelle/images/personal-photos/duke-photo.jpg";
 
-				include('modules/graphic-dipytch.php');
+				include('../modules/graphic-dipytch.php');
 				?>
 		</content-one>
 
@@ -33,7 +34,7 @@
 
 				$image = "https://peprojects.dev/alpha-5/chanelle/images/personal-photos/sammy-photo.jpg";
 
-				include('modules/graphic-dipytch.php');
+				include('../modules/graphic-dipytch.php');
 				?>
 		</content-two>
 
@@ -45,7 +46,7 @@
 
 				$image = "https://peprojects.dev/alpha-5/chanelle/images/personal-photos/cabin-photo.jpeg";
 
-				include('modules/graphic-dipytch.php');
+				include('../modules/graphic-dipytch.php');
 				?>
 		</content-three>
 
@@ -57,5 +58,7 @@
 		</nav>
 		</inner-column>
 	</section>
+
+	<?php include('../footer.php') ?>
 	</body>
 </html>

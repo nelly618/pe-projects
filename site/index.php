@@ -16,10 +16,10 @@
 <?php 
 	
 	if ($page == 'intro') {
-		include('intro.php');
+		include('pages/intro.php');
 	}
 	if ($page == 'about') {
-		include('about.php');
+		include('pages/about.php');
 	}
 	if ($page == 'projects') {
 		include('projects.php');
@@ -28,13 +28,13 @@
 		include('blog.php');
 	}
 	if ($page == 'resume') {
-		include('resume.php');
+		include('pages/resume.php');
 	}
 	if ($page == 'contact') {
-		include('contact.php');
+		include('pages/contact.php');
 	}
 	if ($page == 'goals') {
-		include('goals.php');
+		include('pages/goals.php');
 	}
 
 ?>

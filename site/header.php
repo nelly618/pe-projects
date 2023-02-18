@@ -30,7 +30,7 @@
 					</a></home>
 
 					<nav>
-						<a href='about.php'>About</a>
+						<a href='pages/about.php'>About</a>
 						<a href='projects.php'>Work</a>
 						<a href='contact.php'>Contact</a>
 						

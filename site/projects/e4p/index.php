@@ -2,7 +2,7 @@
 
 	<?php 
 	// router
-	$page = 'e4p-index.php';
+	$page = 'index.php';
 	if ( isset($_GET['page']) ) {
 		$page = $_GET['page'];
 	} else {
@@ -12,7 +12,7 @@
 
 	<main class="page-content">
 
-		<?php include('projects/e4p/e4p.php');
+		<?php include('e4p.php');
 
 		?>
 
