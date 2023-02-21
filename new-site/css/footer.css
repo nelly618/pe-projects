@@ -1,0 +1,14 @@
+.site-footer {
+	background: black;
+	margin: 0;
+	width: 100%;
+	grid-column: 2 / 3;
+	grid-row: span 1;
+}
+
+
+@media (max-width: 750px) {
+	.site-footer {
+		grid-areas: span 1;
+	}
+	}
