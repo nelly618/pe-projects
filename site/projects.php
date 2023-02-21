@@ -15,6 +15,7 @@
 	$link = $link ?? "https://outside.link";
 	$description = $description ?? "Project description here. Project description here. Project description here.";
 	?>
+	
 <main class="work-sections">
 	<inner-column>
 		<h1>Projects</h1>
@@ -22,7 +23,7 @@
 		<?php foreach ($projects as $project) { ?>
 
 		<?php include('modules/project-module.php');?>
-		
+
 		<?php } ?>
 		</section>
 	</inner-column>

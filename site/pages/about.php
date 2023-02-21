@@ -1,6 +1,10 @@
-<link rel='stylesheet' href='../CSS/graphic-dipytch.css'>
-<?php include('../header.php') ?>
 
+<?php include('../header.php') ?>
+<link rel='stylesheet' href='../CSS/style.css'>
+<link rel='stylesheet' href='../CSS/header.css'>
+<link rel='stylesheet' href='../CSS/footer.css'>
+<link rel='stylesheet' href='../CSS/typography.css'>
+<link rel='stylesheet' href='../CSS/graphic-dipytch.css'>
 <main class='main-content'>
 	<inner-column>
 		<h1>About Me</h1>

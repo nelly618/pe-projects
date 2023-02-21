@@ -1,5 +1,5 @@
 <?php
-	$json = file_get_contents('data/resume.json');
+	$json = file_get_contents('../data/resume.json');
 	$resumeData = json_decode($json, true);
 
 	$title = $resumeData["pageTitle"];

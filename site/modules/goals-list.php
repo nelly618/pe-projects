@@ -1,6 +1,6 @@
 <?php
 
-		$json = file_get_contents('data/goals.json');
+		$json = file_get_contents('../data/goals.json');
 		$goalsData = json_decode($json, true);
 	?>
 

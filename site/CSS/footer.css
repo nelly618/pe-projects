@@ -1,0 +1,36 @@
+	.site-footer {
+		width: 100%;
+		background: #212e6e;
+		color: #f7f9f8;
+		padding: 30px;
+		margin-top: 150px;
+		position: sticky;
+	}
+
+	directory {
+		display: block;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.home-links, .work-links, .about-links {
+		display: block;
+		display: flex;
+		flex-direction: column;
+		padding: 15px;
+	}
+
+	contact {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		align-items: center;
+	}
+
+	contact nav {
+		display: flex;
+		flex-direction: row;
+		gap: 40px;
+		padding: 12px;
+	}

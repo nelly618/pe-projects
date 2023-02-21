@@ -19,7 +19,7 @@
 		include('pages/intro.php');
 	}
 	if ($page == 'about') {
-		include('pages/about.php');
+		include('about.php');
 	}
 	if ($page == 'projects') {
 		include('projects.php');
@@ -28,13 +28,13 @@
 		include('blog.php');
 	}
 	if ($page == 'resume') {
-		include('pages/resume.php');
+		include('resume.php');
 	}
 	if ($page == 'contact') {
-		include('pages/contact.php');
+		include('contact.php');
 	}
 	if ($page == 'goals') {
-		include('pages/goals.php');
+		include('goals.php');
 	}
 
 ?>

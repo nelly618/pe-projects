@@ -32,7 +32,7 @@
 					<nav>
 						<a href='pages/about.php'>About</a>
 						<a href='projects.php'>Work</a>
-						<a href='contact.php'>Contact</a>
+						<a href='pages/contact.php'>Contact</a>
 						
 					</nav>
 				</divider>

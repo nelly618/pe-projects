@@ -1,0 +1,23 @@
+/*	CONTACT PAGE*/
+	.contact {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 10px;
+	}
+
+
+	chat-contact {
+		display: block;
+	}
+
+	chat-contact nav {
+		border: 2px solid #212e6e;
+		padding: 50px;
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 70px;
+	}
+
+	nav div {
+		text-decoration: none;
+	}
